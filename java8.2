@@ -1,0 +1,6 @@
+public Double average(List<Integer> list) {
+return list.stream()
+  .filter(s -> s.startsWith("a"))
+  .filter(s -> s.length() == 3)
+  .collect(Collectors.toList());
+  }
